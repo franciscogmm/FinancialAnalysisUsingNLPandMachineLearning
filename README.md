@@ -1,5 +1,5 @@
 # FinancialAnalysisUsingNLPandMachineLearning
-The purpose of this study is to explore whether the sentiment, structure, and contents of a company’s Proxy Statement Compensation Discussion and Analysis (CD&amp;A) reflects the company’s real financial performance in terms of the relationship of Earnings per Share and Operating Cash Flow per Share
+Used text analytics (NLP) and machine learning to determine the true earnings quality of publicly listed companies
 
 This was submitted as a project for my Text Analytics class in my MS Business Analytics program. The original title is “Text Analytics on the Compensation Discussion and Analysis of S&P 1500 Proxy Statements. My other teammates are Minglu Sun, Jiawen Zhou, and Yi Luo. This project was done for educational purposes only. 
 
