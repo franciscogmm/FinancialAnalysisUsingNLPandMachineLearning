@@ -22,12 +22,12 @@ According to Investopedia, Two financial indicators are being used to present wh
 In addition, two popular sentiment lexicons were selected for the sentiment analysis portion: Bing Liu’s sentiment dictionary and LoughranMcDonald Master Dictionary, which was specifically developed for Tim Loughran and Bill McDonald’s paper in the Journal of Finance entitled “When is Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks” (2011).
 
 ## Methodology
-1. Data Preprocessing
+### 1. Data Preprocessing
   - Text data was extracted from the CD&As. It underwent cleaning, which involved removal of punctuations and special characters.
   - Domain-specific lexicon creation. In the process, positive and negative words, phrase, and templates were extracted from 200 of the 500 documents. In the process, positive and negative words, phrase, and templates were extracted.
   - Templates: e.g. an increase/decrease of amount from number>/year, metric increased/decreased amount over/compared to year
   - The team simulated “expertise” and classified the 200 documents into positive or negative performance/sentiment.
-2. Sentiment Analysis
+### 2. Sentiment Analysis
   - Feature-level Analysis
     - Polarity-based sentiment analysis was conducted using the two publicly available lexicons mentioned above.
     - Due to inadequate results, the team decided to create a new domain-specific lexicon that will hopefully produce a better result.
@@ -35,14 +35,14 @@ In addition, two popular sentiment lexicons were selected for the sentiment anal
   - Document-level Analysis
     - Using the “expert” classifications of the 200 labeled data and the domain-specific lexicon as the feature set, a term-document matrix data set, containing the quantity/existence of each feature in all the documents (500 in total, was created.
     - Using a Neural Network, the remaining 300 documents were classified into positive or negative sentiment classes.
-3. Classification of Earnings Quality
+### 3. Classification of Earnings Quality
   - Considering the sentiment classification from the polarity-based sentiment analysis model, using the domain-specific dictionary and the tonal information as predictors and the earning quality as the target variable, four scenarios were used and subjected to multiple classification models (random forest, neural network, and logistic regression).
   - The following scenarios were tested:
     - Scenario 1 : Financial Performances ~ CD&A Tones
     - Scenario 2: Financial Performances ~ CD&A Sentiment
     - Scenario 3: Financial Performances ~ CD&A Tones + Sentiment
     - Scenario 4: Financial Performances ~ Top 5 Predictor Importance (Tone + Sentiment)
-4. Tools:
+### 4. Tools:
   - R
   - Python
   - IBM Tone Analyzer
